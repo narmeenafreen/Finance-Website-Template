@@ -18,46 +18,54 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <div class="gradient-wrapper">
-        <header class="bg-transparent" style="border-bottom: 1px solid white; ">
-            <nav class="navbar navbar-expand-lg bg-transparent mx-5 ">
-                <div class="container-fluid">
-                    <!-- Logo -->
+        <header class="bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-transparent px-5 ">
+                <div class="container-fluid d-flex justify-content-between align-items-center w-100">
                     <a class="navbar-brand" href="index.html">
                         <img src="logo.png" class="img-fluid" alt="Logo" style="max-height: 60px;">
                     </a>
-                    <!-- Toggler button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav gap-3">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav gap-4 ">
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="index.html" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item" href="index.html">Home 1.0</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home 2.0</a></li>
+                            </ul>
+                        </li>
                             <li class="nav-item">
                                 <a class="nav-link text-warning fw-bold" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
+                                <a class="nav-link text-light" href="services.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-link text-light" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
+                                <a class="nav-link text-light" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="get-started.html">Get Started Now</a>
+                                <a class="nav-link text-light" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
-
+                    <div class="d-none d-lg-flex align-items-center">
+                        <a href="login.html" class="me-3 text-decoration-none text-light">Log in</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-sm px-3 rounded-2">Try for free</a>
+                    </div>
+                    <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </nav>
         </header>
-        <section id="About-First" class="pb-2">
+        <section id="About-First" class="pb-2 mt-0">
             <div class="container bg-transparent my-5">
                 <div class="row  justify-content-center align-items-center">
                     <div class="col text-center">
@@ -102,9 +110,9 @@
         </section>
 
         <section id="about-third" class="py-5 bg-light">
-            <div class="container">
+            <div class="container py-5">
                 <h2 class="text-center color-black mb-5">The best crypto you won't find anywhere else</h2>
-                <div class="row text-start">
+                <div class="row text-start mx-5">
                     <div class="col-md-4 mb-4">
                         <div class="mb-2 d-flex align-items-center gap-2">
                             <i class="bi bi-key" style="font-size: 2rem;"></i>
@@ -127,7 +135,7 @@
                         <p>Send or receive crypto anytime, anywhere with just a few clicks.</p>
                     </div>
                 </div>
-                <div class="container mt-5">
+                <div class="container my-5 py-5">
                     <div
                         class="gradient-stats text-white rounded-4 p-4 px-md-5 d-flex flex-column flex-md-row justify-content-between gap-4 text-center">
 
@@ -153,10 +161,6 @@
 
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="about-fourth" class="py-5 px-3 bg-light ">
-            <div class="container ">
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="h-100 d-flex">
@@ -165,7 +169,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h1 class="mb-3">The Values that lead our company</h1>
+                        <h1 class="pb-3">The Values that lead our company</h1>
                         <p>In February of 2022, BTC reached $1.00, we achieved parity with the US dollar for the first
                             time. A cryptocurrency is a digital form of money that exchange is a digital form of money
                             that exchange & the use of currency.
@@ -250,7 +254,7 @@
                 </div>
             </div>
         </section>
-        <section id="about-sixth" class="bg pt-5 gradient-wrapper1">
+        <section id="about-sixth" class="bg pt-5 gradient-wrapper1 mb-0">
             <div class="container">
                 <div class="row px-3 align-items-center">
                     <div class="col-md-7 ">
@@ -258,6 +262,8 @@
                         <p class="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
                             praesentium quasi provident porro cumque dolore?
                         </p>
+                        <br>
+                        <p class="text-black fw-bold">DOWNLOAD NOW ON:</p>
                         <div class="row align-items-center">
                             <div class="col-md-4 mb-3">
                                 <a href="#"
